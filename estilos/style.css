@@ -1,0 +1,103 @@
+@charset "UTF-8";
+
+/* Mobile */
+
+/* Paleta de cores:
+Lilás: #8616b2
+Roxo:  #3816b2
+Azul:  #1642b2 */
+
+:root {
+    --cor1: #1642b2;
+    --cor2: #3816b2;
+    --cor3: #8616b2;
+}
+
+* {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    box-sizing: border-box;
+    margin: 0px;
+    padding: 0px;
+}
+
+body, html {
+    background-color: var(--cor2);
+    height: 100vh;
+    width: 100vw;
+}
+
+section p {
+    font-weight: bold;
+    font-size: 1.2em;
+    margin-bottom: 20px;
+    text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.801);
+}
+
+#imagem {
+    background: #1642b2 url(../imagens/pexelstech.jpg) no-repeat;
+    background-size: cover;
+    background-position: left center;
+    height: 200px;
+}
+
+#content {
+    width: 300px;
+    height: 500px;
+    background-color: white;
+    border-radius: 20px;
+    overflow: hidden;
+    position: absolute;
+    box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.6);
+    top: 50%;
+    left: 50%;
+
+    transform: translate(-50%, -50%);
+}
+
+section#form {
+    padding: 10px;
+    text-align: center;
+    color: var(--cor2);
+    text-shadow: 1px 1px 1px black;
+}
+
+input {
+    width: 70%;
+    border-radius: 10px;
+    border: 2px solid black;
+}
+
+.btn {
+    background-color: var(--cor2);
+    color: white;
+    width: 40%;
+    height: 30px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    display: inline-block;
+    border-radius: 20px;
+}
+
+.btn:hover {
+    cursor: pointer;
+    background-color: #8616b2;
+    color: black;
+    box-shadow: 0px 0px 10px black;
+}   
+
+button {
+    background-color: var(--cor2);
+    color: white;
+    height: 30px;
+    width: 80%;
+    margin-bottom: 10px;
+    border-radius: 20px;
+}
+
+button:hover {
+    cursor: pointer;
+    background-color: #8616b2;
+    color: black;
+    box-shadow: 0px 0px 10px black;
+}
+
