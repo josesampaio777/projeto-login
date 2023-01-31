@@ -26,7 +26,7 @@ body, html {
     width: 100vw;
 }
 
-section p {
+section > p {
     font-weight: bold;
     font-size: 1.2em;
     margin-bottom: 20px;
@@ -38,6 +38,7 @@ section p {
     background-size: cover;
     background-position: left center;
     height: 200px;
+    margin-bottom: 50px;
 }
 
 #content {
@@ -57,7 +58,6 @@ section p {
 
 section#form {
     position: relative;
-    padding: 10px;
     color: var(--cor2);
     text-shadow: 1px 1px 1px black;
 }
@@ -104,24 +104,44 @@ button:hover {
 
 /* Tablet */
 
-@media screen and (min-width: 768px) and (max-width: 992px) {
+@media screen and (min-width: 769px) and (max-width: 992px) {
+
+    body, html {
+        background-image: linear-gradient(#3816b2, #8616b2);
+    }
+
     main#content {
         width: 80vw;
-        height: 600px;
+        height: 400px;
     }
 
     #imagem {
-        background-image: url(../imagens/pexelstech-cut2.jpg);
+        background-image: url(../imagens/pexelstech.jpg);
         float: left;
-        width: 40vw;
+        width: 30vw;
         height: 100vh;
-        background-position: top center;
+        background-position: center center;
+        background-size: cover;
     } 
 
     section#form {
         float: right;
-        width: 60vw;
-        height: 100vh;
+        font-size: 1.1em;
     }
+}
+
+@media screen and (min-width: 992px) {
+
+    body, html {
+        background-image: linear-gradient(#3816b2, #8616b2);
+    }
+
+    main#content {
+        width: 900px;
+        height: 700px;
+    }
+
+
+    
 }
 
