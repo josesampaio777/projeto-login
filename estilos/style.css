@@ -104,44 +104,23 @@ button:hover {
 
 /* Tablet */
 
-@media screen and (min-width: 769px) and (max-width: 992px) {
+@media screen and (min-width: 769px) {
 
-    body, html {
-        background-image: linear-gradient(#3816b2, #8616b2);
+    html, body {
+        background-image: linear-gradient(to top,#8616b2, #1642b2);
     }
 
-    main#content {
+    main#content{
+        display: flex;
+        justify-content: center;
+        align-items: center;
         width: 80vw;
-        height: 400px;
     }
 
-    #imagem {
-        background-image: url(../imagens/pexelstech.jpg);
-        float: left;
-        width: 30vw;
-        height: 100vh;
-        background-position: center center;
-        background-size: cover;
-    } 
-
-    section#form {
-        float: right;
-        font-size: 1.1em;
+    main > p#princ {
+        font-size: 1.4em;
+        margin-bottom: 30px;
     }
-}
-
-@media screen and (min-width: 992px) {
-
-    body, html {
-        background-image: linear-gradient(#3816b2, #8616b2);
-    }
-
-    main#content {
-        width: 900px;
-        height: 700px;
-    }
-
-
     
 }
 
